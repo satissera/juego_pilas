@@ -17,8 +17,8 @@ class EscenaMenu(pilas.escena.Base):
 		self.menu = pilas.actores.Menu(opciones, y=-50)
 
 	def comenzar_a_jugar(self):
-		import pistola2
-		pilas.cambiar_escena(pistola2.Escenajuego())
+		import escenajuego
+		pilas.cambiar_escena(escenajuego.Juego())
 
 	def mostrar_ayuda_del_juego(self):
 		import escena_ayuda
